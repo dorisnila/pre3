@@ -1,0 +1,93 @@
+@use 'variables' as *;
+
+/* Página Recursos */
+/* Recursos - Container y cards */
+.cardrecursos-container {
+    display: flex;
+    flex-flow: row no-wrap;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+    .cardrecursos-container {
+        flex-direction: column;
+    }
+
+    .cardrecuros {
+        margin-bottom: 130px;
+        width: 50%;
+    }
+}
+
+.cardrecursos {
+    width: 286px;
+    border-radius: 8px;
+    border: solid 0.5px #cccccc;
+}
+
+.cardtitle {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-family: $font;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.cardcontent {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    line-height: 1.4;
+    font-family: $font;
+}
+
+.button1 {
+    @include theme;
+}
+
+/* Fin container y cards para Recursos */
+
+/* Recursos - Libros */
+/* Container del OPAC */
+.form-opac-container {
+    @extend .cardrecursos-container;
+    justify-content: center;
+}
+
+/* Formulario simulado para OPAC */
+.form-opac {
+    width: 70%;
+    padding: 50px;
+    background-color: $color3;
+    border: solid 3px #8cb4cc;
+    border-radius: 18px;
+}
+
+/* Caja de búsqueda */
+.search {
+    width: 90%;
+    line-height: 1.8;
+    border-radius: 6px;
+    border: solid 0.5px #cccccc;
+}
+
+/* Fin Recursos - Libros */
+
+/* Recursos - Revistas */
+.revistas-container {
+    @extend .cardrecursos-container;
+    margin-top: 50px;
+    ul {
+        color: #0d0d0d;
+    }
+    li {
+        list-style-type: circle;
+    }    
+}
+
+/* Recursos - Cómics */
+.comics-container {
+    @extend .revistas-container;
+}
+
+/* Fin Página Recursos */

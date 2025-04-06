@@ -1,0 +1,377 @@
+@charset "UTF-8";
+/* Estilos para todo el sitio */
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 26px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 1006px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+}
+
+@media (max-width: 1006px) {
+  h1 {
+    font-size: 16px;
+  }
+}
+h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+  text-decoration: un;
+}
+
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Container general de Bootstrap */
+.container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Fin estilos para todo el sitio */
+/* Header con logo y barra de navegación */
+.navbar {
+  border-bottom: dashed 3px #9cb4cc;
+}
+
+.navbar-nav {
+  font-weight: 500;
+}
+
+/* Fin Header con logo y barra de navegación*/
+/* Footer */
+footer {
+  padding-top: 20px;
+  background-color: #f8f9fa;
+  border-top: dashed 3px #9cb4cc;
+}
+
+.footerleft {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.footercenter {
+  line-height: 50%;
+}
+
+.footerright {
+  line-height: 60%;
+}
+
+/* Fin Footer */
+/* Home */
+/* Home - Imagen de fondo*/
+#home {
+  background-image: url("/assets/img/newtonprep.jpg");
+  background-size: 100% 100%;
+  height: 400px;
+}
+
+/* Home - Texto de bienvenida */
+#welcometext {
+  width: 50%;
+  background-color: beige;
+  opacity: 0.8;
+  text-align: center;
+  padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  #welcometext {
+    width: 80%;
+  }
+  #welcometext h1 {
+    font-size: 18px;
+  }
+  #welcometext h2 {
+    font-size: 14px;
+  }
+}
+/* Animación texto de bienvenida */
+.animate__animated.animate__heartBeat {
+  --animate-duration: 4s;
+  -o-animation-delay: 1s;
+}
+
+/* Fin Home */
+/* Página Nosotros */
+/* Container para video introductorio y horarios */
+#vid-horarios {
+  margin: auto;
+  padding-top: 50px;
+  width: 80%;
+  display: flex;
+  flex-flow: row no-wrap;
+  gap: 100px;
+  margin-bottom: 10px;
+}
+
+/* Video introductorio */
+#video {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/* Horarios */
+#horario {
+  background-color: #9cb4cc;
+  color: #000000;
+  border-radius: 5px;
+  padding: 30px 30px 10px 30px;
+  box-shadow: 6px 6px 6px #bebbbb;
+  width: 60%;
+  margin: auto;
+}
+
+@media (max-width: 1006px) {
+  #vid-horarios {
+    margin: auto;
+    padding-top: 30px;
+    width: 90%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #video {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  #vid-horarios {
+    margin: auto;
+    padding-top: 30px;
+    width: 90%;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+/* Fin Página Nosotros */
+/* Página Recursos */
+/* Recursos - Container y cards */
+.cardrecursos-container, .revistas-container, .comics-container, .form-opac-container {
+  display: flex;
+  flex-flow: row no-wrap;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  .cardrecursos-container, .revistas-container, .comics-container, .form-opac-container {
+    flex-direction: column;
+  }
+  .cardrecuros {
+    margin-bottom: 130px;
+    width: 50%;
+  }
+}
+.cardrecursos {
+  width: 286px;
+  border-radius: 8px;
+  border: solid 0.5px #cccccc;
+}
+
+.cardtitle {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.cardcontent {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  line-height: 1.4;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.button1 {
+  width: 150px;
+  background-color: #9cb4cc;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin-left: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+/* Fin container y cards para Recursos */
+/* Recursos - Libros */
+/* Container del OPAC */
+.form-opac-container {
+  justify-content: center;
+}
+
+/* Formulario simulado para OPAC */
+.form-opac {
+  width: 70%;
+  padding: 50px;
+  background-color: #f8f9fa;
+  border: solid 3px #8cb4cc;
+  border-radius: 18px;
+}
+
+/* Caja de búsqueda */
+.search {
+  width: 90%;
+  line-height: 1.8;
+  border-radius: 6px;
+  border: solid 0.5px #cccccc;
+}
+
+/* Fin Recursos - Libros */
+/* Recursos - Revistas */
+.revistas-container, .comics-container {
+  margin-top: 50px;
+}
+.revistas-container ul, .comics-container ul {
+  color: #0d0d0d;
+}
+.revistas-container li, .comics-container li {
+  list-style-type: circle;
+}
+
+/* Recursos - Cómics */
+/* Fin Página Recursos */
+/* Página Servicios */
+/* Servicios acordión  */
+.accordion {
+  border: solid 2px #9cb4cc;
+}
+
+.accordion-button {
+  background-color: #e6f0ff;
+  margin-bottom: 3px;
+}
+
+/* Servicios - Plazos de préstamo */
+table {
+  width: 50%;
+  text-align: center;
+}
+
+table, th, td {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+.container-plazos {
+  width: 70%;
+  margin-top: 40px;
+  display: grid;
+  grid-template-areas: "plazos plazos" "libros librosplazo" "revistas revplazo" "comics comicplazo" "nota nota";
+  grid-template-columns: 1fr 2fr;
+}
+
+.container-plazos > div {
+  border: solid 1px #000000;
+  padding: 10px;
+}
+
+.container-plazos > div.plazos {
+  grid-area: plazos;
+  text-align: center;
+  background-color: #f6eba2;
+}
+
+.container-plazos > div.librosplazo {
+  grid-area: librosplazo;
+}
+
+.container-plazos > div.revistas {
+  grid-area: revistas;
+}
+
+.container-plazos > div.revplazo {
+  grid-area: revplazo;
+}
+
+.container-plazos > div.comics {
+  grid-area: comics;
+}
+
+.container-plazos > div.comicplazo {
+  grid-area: comicplazo;
+}
+
+.container-plazos > div.nota {
+  grid-area: nota;
+}
+
+/* Fin Página Servicios */
+/* Página Contacto */
+/* Contacto - Div para centrar el form */
+.containerform {
+  width: 70%;
+  margin-top: 20px;
+  padding: 30px 10px 30px 10px;
+  display: flex;
+  justify-content: center;
+  border: solid 2px #9cb4cc;
+  border-radius: 8px;
+}
+
+/* Contacto - Botón de Enviar del Formulario */
+input[type=submit] {
+  width: 150px;
+  background-color: #f6eba2;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin-left: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  border-width: 0.5px;
+}
+
+input[type=reset] {
+  width: 150px;
+  background-color: #f6eba2;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin-left: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  border-width: 0.5px;
+  font-weight: normal;
+  background-color: beige;
+}
+
+/* Fin Página Contactate */
+
+/*# sourceMappingURL=style.css.map */

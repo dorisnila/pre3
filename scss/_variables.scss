@@ -1,0 +1,23 @@
+$color1: #9cb4cc;
+$color2: #f6eba2;
+$color3: #f8f9fa;
+$color4: #000000;
+$font:'Trebuchet MS',
+'Lucida Sans Unicode',
+'Lucida Grande',
+'Lucida Sans',
+Arial,
+sans-serif;
+
+@mixin theme ($theme: #9cb4cc) {
+    width: 150px;
+    background-color: $theme;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    font-family: $font;
+    margin-left: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,60 @@
+@use 'variables' as *;
+
+/* Página Nosotros */
+/* Container para video introductorio y horarios */
+#vid-horarios {
+    margin: auto;
+    padding-top: 50px;
+    width: 80%;
+    display: flex;
+    flex-flow: row no-wrap;
+    gap: 100px;
+    margin-bottom: 10px;
+}
+
+/* Video introductorio */
+#video {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/* Horarios */
+#horario {
+    background-color: $color1;
+    color: $color4;
+    border-radius: 5px;
+    padding: 30px 30px 10px 30px;
+    box-shadow: 6px 6px 6px #bebbbb;
+    width: 60%;
+    margin: auto;
+}
+
+@media (max-width: 1006px) {
+    #vid-horarios {
+        margin: auto;
+        padding-top: 30px;
+        width: 90%;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    #video {
+        text-align: center;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #vid-horarios {
+        margin: auto;
+        padding-top: 30px;
+        width: 90%;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Fin Página Nosotros */

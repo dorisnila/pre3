@@ -1,0 +1,23 @@
+@use 'variables' as *;
+
+/* Footer */
+footer {
+    padding-top: 20px;
+    background-color: $color3 ;
+    border-top: dashed 3px $color1;
+}
+
+.footerleft {
+    font-style: italic;
+    font-weight: 700;
+}
+
+.footercenter {
+    line-height: 50%;
+}
+
+.footerright {
+    line-height: 60%;
+}
+
+/* Fin Footer */
