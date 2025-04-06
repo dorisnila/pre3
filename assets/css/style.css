@@ -78,9 +78,9 @@ footer {
 /* Home */
 /* Home - Imagen de fondo*/
 #home {
-  background-image: url("/assets/img/newtonprep.jpg");
+  background-image: url("assets/img/newtonprep.jpg");
   background-size: 100% 100%;
-  height: 400px;
+  height: 100px;
 }
 
 /* Home - Texto de bienvenida */
