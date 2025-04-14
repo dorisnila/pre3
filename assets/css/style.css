@@ -67,13 +67,8 @@ footer {
 }
 
 .footercenter {
-  line-height: 50%;
+  background-color: #ffbb9b;
 }
-
-.footerright {
-  line-height: 60%;
-}
-
 /* Fin Footer */
 /* Home */
 /* Home - Imagen de fondo*/
